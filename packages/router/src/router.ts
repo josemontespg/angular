@@ -1027,7 +1027,9 @@ export class Router {
     return this.serializeUrl(this.currentUrlTree);
   }
 
-  /** The current Navigation object if one exists */
+  /**
+   * Returns the current Navigation object value when the router is busy navigating, and null when idle.
+   */
   getCurrentNavigation(): Navigation|null {
     return this.currentNavigation;
   }
